@@ -21,10 +21,7 @@ rate:
       - clientId: client2
         windowSizeMs: 60000
         maxRequests: 10
-logging:
-  level:
-    root: DEBUG
-    org.springframework.data.redis: DEBUG
+
 
 # Profile-specific configurations
 ---
