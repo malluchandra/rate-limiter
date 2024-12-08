@@ -1,0 +1,16 @@
+
+spring:
+  application:
+    name: API Rate Limiter
+  redis:
+    host: localhost
+    port: 6379
+rate:
+  limiter:
+    clients:
+      - clientId: client1
+        windowSizeMs: 10000
+        maxRequests: 5
+      - clientId: client2
+        windowSizeMs: 60000
+        maxRequests: 10
